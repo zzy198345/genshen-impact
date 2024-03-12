@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.first {
+    background-image: url(../image/news/背景.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: cover;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(100px), opacity(10px);
+    height: 650px;
+}
+
+.box1 {
+    position: absolute;
+    top: -20px;
+    left: 60px;
+    width: 70px;
+    height: 80px;
+    z-index: 3;
+}
+
+.box1 img {
+    width: 200%;
+    overflow: hidden;
+}
+
+.music {
+    position: absolute;
+    left: 26px;
+    top: 20px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: solid rgba(255, 255, 255, 0.69) 3px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.music img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.music:last-child {
+    position: absolute;
+    margin-top: -6px;
+    width: 2px;
+    height: 2px;
+}
+
+#ban {
+    display: none;
+}
+
+header {
+    position: fixed;
+    float: left;
+    height: 70px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.66);
+    z-index: 3;
+}
+
+.nav {
+    position: absolute;
+    left: 230px;
+}
+
+.nav li {
+    float: left;
+    list-style: none;
+    width: 50px;
+    line-height: 70px;
+    text-align: center;
+    margin-right: 50px;
+    letter-spacing: 5px;
+}
+
+.nav li a {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgba(240, 248, 255, 0.79);
+    font-weight: 500px;
+}
+.nav :nth-child(2){
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+    font-weight: 700;
+}
+header ul:nth-child(2) {
+    position: absolute;
+    margin-left: 250px;
+    z-index: 1;
+}
+
+.load a {
+    float: right;
+    width: 120px;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    color: rgba(240, 248, 255, 0.79);
+    font-weight: 500px;
+    letter-spacing: 5px;
+    margin-right: 20px;
+}
+
+.system a {
+    float: right;
+    width: 180px;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    color: rgba(240, 248, 255, 0.79);
+    font-weight: 500px;
+    letter-spacing: 2px;
+    margin-right: 20px;
+}
+
+.load img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.system img {
+    position: absolute;
+    top: 20px;
+    right: 150px;
+}
+
+header ul li a:hover {
+    color: rgb(240, 255, 254);
+    text-shadow: 0px 0px 20px white;
+}
+
+.system a:hover {
+    color: rgb(240, 255, 254);
+    text-shadow: 0px 0px 20px white;
+}
+
+.load a:hover {
+    color: rgb(240, 255, 254);
+    text-shadow: 0px 0px 20px white;
+}
+
+.load img:hover {
+    color: rgb(240, 255, 254);
+    box-shadow: 0px 0px 20px white;
+}
+
+.system img:hover {
+    color: rgb(240, 255, 254);
+    box-shadow: 0px 0px 20px white;
+}
+
+
+
+.new {
+    /* 父元素 */
+    display: flex;
+    /* 父元素flex布局 */
+    justify-content: center;
+    /* 子元素水平居中 */
+    align-items: center;
+    position: relative;
+    /* 子元素垂直居中 */
+}
+
+.new:hover {
+    /* 改变鼠标样式 */
+    cursor: pointer;
+}
+
+.new1,
+.new2,
+.new3 {
+    position: relative;
+    width: 380px;
+    height: 410px;
+    background: rgba(0, 0, 0, 0.6);
+    margin-left: 8px;
+    top: 130px;
+    color: white;
+    font-size: 21px;
+    border-radius: 1%;
+}
+
+.pic {
+    position: absolute;
+    width: 350px;
+    height: 180px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    overflow: hidden;
+}
+
+.pic img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.pic img:hover {
+     /* 图片放大 */
+     transform: scale(1.24);
+     overflow: hidden;
+}
+
+.new1 p,
+.new2 p,
+.new3 p {
+    position: absolute;
+    margin-top: 55%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#new {
+    position: absolute;
+    font-size: 15px;
+    color: rgb(43, 186, 43);
+    right: 6px;
+    bottom: 14px;
+}
+
+.new #time {
+    position: absolute;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.395);
+    left: 16px;
+    bottom: 14px;
+}
+
+.new #time2 {
+    position: absolute;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.395);
+    left: 16px;
+    bottom: 14px;
+}
+
+.new #time3 {
+    position: absolute;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.395);
+    left: 16px;
+    bottom: 14px;
+}
+.second {
+    width: 100%;
+    height: 1200px;
+    background-color: rgb(240,240,240);
+      /* 父元素 */
+      /* 父元素flex布局 */
+      display: flex;
+      /* 子元素垂直居中 */
+      justify-content: center;
+}
+.sec {
+    width: 1150px;
+    position: relative;
+    
+}
+
+.second ul {
+    /* 取消li前面小圆点*/ 
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.second ul :first-child{
+    left: 10px;
+    background-color: rgb(57, 59, 64);
+    color: rgb(230, 232, 141);
+}
+.second li {
+    width: 140px;
+    height: 32px;
+    background-color: rgb(207, 208, 209);
+    margin-left: 20px;
+    border-radius: 6%;
+    text-align: center;
+    line-height: 32px;
+    font-size: 13px;
+    /* 鼠标放上，触发一个过渡效果 */
+    transition: all 0.2s;
+}
+.second li:hover {
+    background-color: rgb(57, 59, 64);
+    color: rgb(230, 232, 141);
+    cursor: pointer;
+}
+.lang-new {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 160px;
+    background-color: rgb(255,255,255);
+    margin-top: 8px;
+    top: 100px;
+    border-radius: 1%;
+    overflow: hidden;
+    transition: all 0.5s;
+} 
+
+.lang-new img {
+    width: 250px;
+    height: 124px;
+    overflow: hidden;
+    margin-left: 12px;
+}
+.lang-new p {
+    font-size: 21px;
+    margin-top: -80px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-left: 20px;
+}
+.lang-new span {
+    position: absolute;
+    right: 100px;
+   margin-bottom: -120px;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.496);
+}
+#xin {
+    color:rgb(43, 186, 43);
+    right: 20px
+}
+.more {
+    width: 100%;
+    height: 38px;
+    background-color:rgb(92,93,97);
+    margin-top: 30px;
+    border-radius: 3px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+.lang-new:hover {
+    background-color: rgb(240,240,240);
+    box-shadow: 3px -3px rgb(0, 128, 111) ;
+    cursor: pointer;
+}
+.more:hover {
+    background-color: rgb(116,118,125);
+    cursor: pointer;
+}

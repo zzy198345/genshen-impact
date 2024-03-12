@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/role.css">
+</head>
+<body>
+    <div class="first">
+    <header>
+        <audio src="music/HOYO-MiX、陈致逸 - Liyue 璃月.mp3" id="au" loop autoplay></audio>
+        <div class="music">
+            <a href="#">
+                <img src="upload/音乐.png" alt="">
+                <div id="ban">
+                    <img src="upload/禁止.png" alt="">
+                </div>
+            </a>
+        </div>
+        <div class="box1"><img src="upload/yuanshen.png" alt=""></div>
+        <ul class="nav">
+            <li><a href="genshen.html" class="">首页</a></li>
+            <li><a href="news.html" class="">新闻</a></li>
+            <li><a href="#" class="">角色</a></li>
+            <li><a href="#" class="">世界</a></li>
+            <li><a href="cartoon.html" class="">漫画</a></li>
+            <li><a href="#" class="">社区</a></li>
+        </ul>
+        <span class="top"></span>
+
+        <span class="load"><a href="#" class="">
+                登录 <img src="upload/登录.png" alt=""></a>
+        </span>
+        <span class="system"><a href="#">成长关爱系统
+                <img src="upload/关爱.png" alt="">
+            </a></span>
+    </header>
+    <div class="state">
+        <ul>
+            <li><a href="#"></a><p>蒙德城</p></li>
+            <li><a href="#"></a><p>璃月港</p></li>
+            <li><a href="#"></a><p>稻妻城</p></li>
+            <li><a href="#"></a><p>须弥城</p></li>
+            <li><a href="#"></a><p>敬请期待</p></li>
+        </ul>
+    </div>
+    <div class="xie">
+    <div id="xie"></div>
+</div>
+        <div class="feng">
+        <img src="image/role/风元素.png" alt="">
+         <img src="image/role/文字温迪.png" alt="">
+    </div>
+    <div class="wendi">
+        <img src="image/role/温迪.png" alt="">
+    </div>
+
+    <div class="yan">
+        <img src="image/role/岩元素.png" alt="">
+         <img src="image/role/文字钟离.png" alt="">
+    </div>
+    <div class="zhongli">
+        <img src="image/role/钟离.png" alt="">
+    </div>
+
+    <div class="lei">
+        <img src="image/role/雷.png" alt="">
+         <img src="image/role/文字影.png" alt="">
+    </div>
+    <div class="ying">
+        <img src="image/role/影.png" alt="">
+    </div>
+
+    <div class="cao">
+        <img src="image/role/草元素.png" alt="">
+         <img src="image/role/文字纳西妲.png" alt="">
+    </div>
+    <div class="naxida">
+        <img src="image/role/naxida.png" alt="">
+    </div>
+</div>
+    <script src="js/musci.js"></script>
+    <!-- <script src="js/role.js"></script> -->
+    
+
+    <script src="jquery/jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+    var $arr1 = $('.state li');
+    var $imgs = $('.feng, .yan, .lei, .cao');
+    var $pics = $('.wendi img, .zhongli img, .ying img, .naxida img');
+
+    $arr1.click(function() {
+        var index = $arr1.index(this);
+        $arr1.css({
+            'marginLeft': '0',
+            'backgroundColor': 'rgba(0,0,0,0)'
+        });
+        $imgs.hide();
+        $pics.hide();
+
+        $(this).css({
+            'marginLeft': '15px',
+            'backgroundColor': 'rgba(0,0,0,0.5)',
+        });
+        $imgs.eq(index).show();
+        $pics.eq(index).show();
+    });
+});
+
+    </script>
+</body>
+</html>

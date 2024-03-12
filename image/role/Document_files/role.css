@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    background-image: url(../image/蒙德.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(100px), opacity(10px);
+    background-size: cover;
+    height: 800px;
+    /* 动画无限循环 */
+    animation: background-trans 16s infinite alternate;
+    backdrop-filter: blur(5px);
+}
+
+@keyframes background-trans {
+    form {}
+
+    to {
+        background-image: url(../image/news/背景.png);
+    }
+}
+
+.box1 {
+    position: absolute;
+    top: -20px;
+    left: 60px;
+    width: 70px;
+    height: 80px;
+    z-index: 3;
+}
+
+.box1 img {
+    width: 200%;
+    overflow: hidden;
+}
+
+.music {
+    position: absolute;
+    left: 26px;
+    top: 20px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: solid rgba(255, 255, 255, 0.69) 3px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.music img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.music:last-child {
+    position: absolute;
+    margin-top: -6px;
+    width: 2px;
+    height: 2px;
+}
+
+#ban {
+    display: none;
+}
+
+header {
+    position: fixed;
+    float: left;
+    height: 70px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.66);
+    z-index: 10;
+}
+
+.nav {
+    position: absolute;
+    left: 230px;
+}
+
+.nav li {
+    float: left;
+    list-style: none;
+    width: 50px;
+    line-height: 70px;
+    text-align: center;
+    margin-right: 50px;
+    letter-spacing: 5px;
+}
+
+.nav li a {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgba(240, 248, 255, 0.79);
+    font-weight: 500px;
+}
+
+.nav :nth-child(3) {
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+    font-weight: 700;
+}
+
+header ul:nth-child(2) {
+    position: absolute;
+    margin-left: 250px;
+    z-index: 1;
+}
+
+.load a {
+    float: right;
+    width: 120px;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    color: rgba(240, 248, 255, 0.79);
+    font-weight: 500px;
+    letter-spacing: 5px;
+    margin-right: 20px;
+}
+
+.system a {
+    float: right;
+    width: 180px;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    color: rgba(240, 248, 255, 0.79);
+    font-weight: 500px;
+    letter-spacing: 2px;
+    margin-right: 20px;
+}
+
+.load img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.system img {
+    position: absolute;
+    top: 20px;
+    right: 150px;
+}
+
+header ul li a:hover {
+    color: rgb(240, 255, 254);
+    text-shadow: 0px 0px 20px white;
+}
+
+.system a:hover {
+    color: rgb(240, 255, 254);
+    text-shadow: 0px 0px 20px white;
+}
+
+.load a:hover {
+    color: rgb(240, 255, 254);
+    text-shadow: 0px 0px 20px white;
+}
+
+.load img:hover {
+    color: rgb(240, 255, 254);
+    box-shadow: 0px 0px 20px white;
+}
+
+.system img:hover {
+    color: rgb(240, 255, 254);
+    box-shadow: 0px 0px 20px white;
+}
+
+.state {
+    position: absolute;
+    top: 21%;
+}
+
+.state ul li {
+    list-style: none;
+    width: 200px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 60px;
+    padding-left: 30%;
+    color: white;
+}
+.feng {
+    width: 300px;
+    height: 200px;
+    background-color: black;
+    z-index: 100;
+    position: absolute;
+}
+.feng img {
+    width: 50%;
+    height: 50%;
+}

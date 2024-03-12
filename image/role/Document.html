@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://127.0.0.1:5500/role.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<link rel="stylesheet" href="./Document_files/role.css"></head>
+<body>
+    <header>
+        <audio src="music/HOYO-MiX、陈致逸 - Liyue 璃月.mp3" id="au" loop="" autoplay=""></audio>
+        <div class="music">
+            <a href="http://127.0.0.1:5500/role.html#">
+                <img src="./Document_files/音乐.png" alt="">
+                <div id="ban">
+                    <img src="./Document_files/禁止.png" alt="">
+                </div>
+            </a>
+        </div>
+        <div class="box1"><img src="./Document_files/yuanshen.png" alt=""></div>
+        <ul class="nav">
+            <li><a href="http://127.0.0.1:5500/genshen.html" class="">首页</a></li>
+            <li><a href="http://127.0.0.1:5500/news.html" class="">新闻</a></li>
+            <li><a href="http://127.0.0.1:5500/role.html#" class="">角色</a></li>
+            <li><a href="http://127.0.0.1:5500/role.html#" class="">世界</a></li>
+            <li><a href="http://127.0.0.1:5500/role.html#" class="">漫画</a></li>
+            <li><a href="http://127.0.0.1:5500/role.html#" class="">社区</a></li>
+        </ul>
+        <span class="top"></span>
+
+        <span class="load"><a href="http://127.0.0.1:5500/role.html#" class="">
+                登录 <img src="./Document_files/登录.png" alt=""></a>
+        </span>
+        <span class="system"><a href="http://127.0.0.1:5500/role.html#">成长关爱系统
+                <img src="./Document_files/关爱.png" alt="">
+            </a></span>
+    </header>
+    <div class="state">
+        <ul>
+            <li><a href="http://127.0.0.1:5500/role.html#"></a>蒙德城</li>
+            <li><a href="http://127.0.0.1:5500/role.html#"></a>璃月港</li>
+            <li><a href="http://127.0.0.1:5500/role.html#"></a>稻妻城</li>
+            <li><a href="http://127.0.0.1:5500/role.html#"></a>须弥城</li>
+            <li><a href="http://127.0.0.1:5500/role.html#"></a>敬请期待</li>
+        </ul>
+    </div>
+    <div id="feng">
+        <img src="./Document_files/风元素.png" alt="">
+         <img src="./Document_files/文字温迪.png" alt="">
+    </div>
+    <script src="./Document_files/musci.js.下载"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
